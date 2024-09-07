@@ -238,6 +238,5 @@ if __name__ == "__main__":
     print(str(mssim(img1, img2))+"\t"+str(mssim(img1, img3))+"\n")
     print(str(psnr(img1, img2))+"\t"+str(psnr(img1, img3))+"\n")
     print(str(MSE(img1, img2))+"\t"+str(MSE(img1, img3))+"\n")
-    print(str(cal_psnr(img1, img2))+"\t"+str(cal_psnr(img1, img3))+"\n")
 
 
