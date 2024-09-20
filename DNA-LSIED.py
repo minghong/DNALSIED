@@ -249,7 +249,7 @@ def logistic_map(x, r):
 
 if __name__ == '__main__':    
     #pixel bitstream
-    bitstream=image_to_bitstream("D:\\01.bmp") 
+    bitstream=image_to_bitstream("lena.bmp") 
     
     #encrypted encode
     string=""
@@ -317,15 +317,15 @@ if __name__ == '__main__':
     #image
     image_size = (256, 256)
     image = bitstream_to_image(bitstream_1, image_size)
-    image.save("D:\\trans_lena.bmp")
+    image.save("trans_lena.bmp")
     
-    img = cv2.imread("D:\\trans_lena.bmp",cv2.IMREAD_GRAYSCALE)
+    img = cv2.imread("trans_lena.bmp",cv2.IMREAD_GRAYSCALE)
     #median filter
     median = cv2.medianBlur(img, 3)
-    cv2.imwrite("D:\\trans_denosie_lena.bmp", median)
-    img1 = cv2.imread("D:\\01.bmp",cv2.IMREAD_GRAYSCALE)
-    img2 = cv2.imread("D:\\trans_lena.bmp",cv2.IMREAD_GRAYSCALE)
-    img3= cv2.imread("D:\\trans_denosie_lena.bmp",cv2.IMREAD_GRAYSCALE)
+    cv2.imwrite("trans_denosie_lena.bmp", median)
+    img1 = cv2.imread("lena.bmp",cv2.IMREAD_GRAYSCALE)
+    img2 = cv2.imread("trans_lena.bmp",cv2.IMREAD_GRAYSCALE)
+    img3= cv2.imread("trans_denosie_lena.bmp",cv2.IMREAD_GRAYSCALE)
     
     
     #the quality of reconstructed image
