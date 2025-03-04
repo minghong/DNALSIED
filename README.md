@@ -12,3 +12,6 @@ If you have any question, please contact us.
 
 ## Related
 If you need the newest method to compare, we recommend DP-ID (https://github.com/minghong/DP-ID).
+
+## License
+This project is licensed under the MIT License.
